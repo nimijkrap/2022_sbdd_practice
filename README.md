@@ -18,12 +18,12 @@ $ pip install vina meeko
 PDB ID: 6W63, 7VTH, 7VU6
 
 Download PDB files from the PDB website
-[RCSB PDB: Homepage](https://www.rcsb.org/)
+https://www.rcsb.org/
 
 or 
 
 ```bash
-$ wget [https://files.rcsb.org/download/6W63.pdb](https://files.rcsb.org/download/6W63.pdb)
+$ wget https://files.rcsb.org/download/6W63.pdb
 ```
 
 ## 1. Re-docking 
@@ -50,7 +50,7 @@ rms /ligand////*,/ligand_vina_out_0001////*
 
 ```bash
 $ python run_docking.py
-$ pymol pdb/7vth.pdb, 7vu6.pdb, receptor.pdbqt, *_vina_out.pdbqt
+$ pymol pdb/7vth.pdb, pdb/7vu6.pdb, receptor.pdbqt, *_vina_out.pdbqt
 ```
 
 Run below command in PyMol
