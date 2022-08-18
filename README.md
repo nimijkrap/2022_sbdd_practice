@@ -39,10 +39,11 @@ $ pymol *.pdbqt
 ```
 
 Analysis docking model wih PyMol
+Run below command in PyMol
 ```
-$ rms /ligand////*, /ligand_vina_out////*
-$ split_states ligand_vina_out
-$ rms /ligand////*,/ligand_vina_out_0001////*
+rms /ligand////*, /ligand_vina_out////*
+split_states ligand_vina_out
+rms /ligand////*,/ligand_vina_out_0001////*
 ```
 
 ## 2. Docking ligands to receptor (PDB ID: 6w63)
@@ -52,6 +53,7 @@ $ python run_docking.py
 $ pymol pdb/7vth.pdb, 7vu6.pdb, receptor.pdbqt, *_vina_out.pdbqt
 ```
 
+Run below command in PyMol
 ```
 align 7vu6, receptor
 align 7vth, receptor
