@@ -14,7 +14,7 @@ $ pip install vina meeko
 
 # Practice Summary 
 
-## PDB 다운로드
+## Download from PDB 
 PDB ID: 6W63, 7VTH, 7VU6
 
 Download PDB files from the PDB website
@@ -27,9 +27,9 @@ $ wget https://files.rcsb.org/download/6W63.pdb
 ```
 
 ## 1. Re-docking 
-Receptor - 3CL protease (PDB ID: 6w63)
+Receptor - 3CL protease (PDB ID: 6w63)  
 Ligand - 3CL protease inhibitor X77 (PDB ID: 6w63)
-
+ 
 ```bash
 $ python pdb_prep.py
 $ python lig_prep.py
@@ -38,8 +38,9 @@ $ python simple_run.py
 $ pymol *.pdbqt
 ```
 
-Analysis docking model wih PyMol
+Analysis docking model wih PyMol  
 Run below command in PyMol
+
 ```
 rms /ligand////*, /ligand_vina_out////*
 split_states ligand_vina_out
