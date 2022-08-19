@@ -50,7 +50,7 @@ rms /ligand////*,/ligand_vina_out_0001////*
 
 ```bash
 $ python run_docking.py
-$ pymol pdb/7vth.pdb, pdb/7vu6.pdb, receptor.pdbqt, *_vina_out.pdbqt
+$ pymol pdb/7vth.pdb pdb/7vu6.pdb receptor.pdbqt *_vina_out.pdbqt
 ```
 
 Run below command in PyMol
